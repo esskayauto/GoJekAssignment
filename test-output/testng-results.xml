@@ -1,51 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="1" total="1" passed="0">
+<testng-results skipped="0" failed="1" total="2" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="54801" started-at="2017-01-07T10:09:27Z" finished-at="2017-01-07T10:10:22Z">
+  <suite name="Suite" duration-ms="20537" started-at="2017-01-07T18:17:40Z" finished-at="2017-01-07T18:18:01Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="54801" started-at="2017-01-07T10:09:27Z" finished-at="2017-01-07T10:10:22Z">
-      <class name="com.gojek.sanity.LoginTest">
-        <test-method status="PASS" signature="preCondition()[pri:0, instance:com.gojek.sanity.LoginTest@b684286]" name="preCondition" is-config="true" duration-ms="7279" started-at="2017-01-07T15:39:20Z" finished-at="2017-01-07T15:39:27Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- preCondition -->
-        <test-method status="FAIL" signature="loginTest()[pri:0, instance:com.gojek.sanity.LoginTest@b684286]" name="loginTest" duration-ms="54500" started-at="2017-01-07T15:39:27Z" finished-at="2017-01-07T15:40:21Z">
-          <exception class="org.openqa.selenium.NoSuchElementException">
-            <message>
-              <![CDATA[Unable to locate element: {"method":"id","selector":"email"}
-Command duration or timeout: 30.20 seconds
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '2.48.2', revision: '41bccdd10cf2c0560f637404c2d96164b67d9d67', time: '2015-10-09 13:08:06'
-System info: host: 'Kirans-MacBook-Pro.local', ip: '192.168.2.5', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.11.6', java.version: '1.8.0_65'
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=42.0, platform=MAC, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
-Session ID: 38d82d7e-435d-f34e-ac5b-8b9f32db0ad1
-*** Element info: {Using=id, value=email}]]>
-            </message>
+    <test name="Test" duration-ms="20537" started-at="2017-01-07T18:17:40Z" finished-at="2017-01-07T18:18:01Z">
+      <class name="com.gojek.sanity.SearchAFlight">
+        <test-method status="FAIL" signature="searchFlight()[pri:0, instance:com.gojek.sanity.SearchAFlight@96532d6]" name="searchFlight" duration-ms="1" started-at="2017-01-07T23:48:01Z" finished-at="2017-01-07T23:48:01Z">
+          <exception class="java.lang.NullPointerException">
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: Unable to locate element: {"method":"id","selector":"email"}
-Command duration or timeout: 30.20 seconds
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '2.48.2', revision: '41bccdd10cf2c0560f637404c2d96164b67d9d67', time: '2015-10-09 13:08:06'
-System info: host: 'Kirans-MacBook-Pro.local', ip: '192.168.2.5', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.11.6', java.version: '1.8.0_65'
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=42.0, platform=MAC, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
-Session ID: 38d82d7e-435d-f34e-ac5b-8b9f32db0ad1
-*** Element info: {Using=id, value=email}
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.lang.reflect.Constructor.newInstance(Constructor.java:422)
-	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
-	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:647)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:353)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:403)
-	at org.openqa.selenium.By$ById.findElement(By.java:218)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:345)
-	at com.gojek.sanity.LoginTest.loginTest(LoginTest.java:17)
+              <![CDATA[java.lang.NullPointerException
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy6.click(Unknown Source)
+	at com.gojek.pom.SearchFlightPage.roundTrip(SearchFlightPage.java:26)
+	at com.gojek.sanity.SearchAFlight.searchFlight(SearchAFlight.java:25)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -70,24 +40,27 @@ Session ID: 38d82d7e-435d-f34e-ac5b-8b9f32db0ad1
 	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:115)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:207)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:178)
-Caused by: org.openqa.selenium.NoSuchElementException: Unable to locate element: {"method":"id","selector":"email"}
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '2.48.2', revision: '41bccdd10cf2c0560f637404c2d96164b67d9d67', time: '2015-10-09 13:08:06'
-System info: host: 'Kirans-MacBook-Pro.local', ip: '192.168.2.5', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.11.6', java.version: '1.8.0_65'
-Driver info: driver.version: unknown
-	at <anonymous class>.FirefoxDriver.prototype.findElementInternal_(file:///var/folders/zd/xg2w7l2d0gjdxh9ck8q3nlzr0000gn/T/anonymous2725435005620557472webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:10659)
-	at <anonymous class>.fxdriver.Timer.prototype.setTimeout/<.notify(file:///var/folders/zd/xg2w7l2d0gjdxh9ck8q3nlzr0000gn/T/anonymous2725435005620557472webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:621)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- searchFlight -->
+      </class> <!-- com.gojek.sanity.SearchAFlight -->
+      <class name="com.gojek.sanity.LoginTest">
+        <test-method status="PASS" signature="preCondition()[pri:0, instance:com.gojek.sanity.LoginTest@880ec60]" name="preCondition" is-config="true" duration-ms="12288" started-at="2017-01-07T23:47:28Z" finished-at="2017-01-07T23:47:40Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- preCondition -->
+        <test-method status="PASS" signature="loginTest()[pri:0, instance:com.gojek.sanity.LoginTest@880ec60]" name="loginTest" duration-ms="20518" started-at="2017-01-07T23:47:40Z" finished-at="2017-01-07T23:48:01Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginTest -->
-        <test-method status="PASS" signature="postCondition()[pri:0, instance:com.gojek.sanity.LoginTest@b684286]" name="postCondition" is-config="true" duration-ms="156" started-at="2017-01-07T15:40:22Z" finished-at="2017-01-07T15:40:22Z">
+        <test-method status="PASS" signature="postCondition()[pri:0, instance:com.gojek.sanity.LoginTest@880ec60]" name="postCondition" is-config="true" duration-ms="228" started-at="2017-01-07T23:48:01Z" finished-at="2017-01-07T23:48:01Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- postCondition -->
       </class> <!-- com.gojek.sanity.LoginTest -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
 </testng-results>
