@@ -39,7 +39,7 @@ public class BaseTest
 	@AfterSuite
 	public void postCondition() {
 		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
-		driver.quit();
+		//driver.quit();
 	}
 
 }

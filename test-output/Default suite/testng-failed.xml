@@ -6,7 +6,9 @@
       <class name="com.gojek.sanity.LoginTest">
         <methods>
           <include name="preCondition"/>
-          <include name="loginTest"/>
+          <include name="paymentDetails"/>
+          <include name="bookFlight"/>
+          <include name="travellersDetail"/>
           <include name="postCondition"/>
         </methods>
       </class> <!-- com.gojek.sanity.LoginTest -->

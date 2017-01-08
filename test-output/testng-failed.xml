@@ -1,19 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="Failed suite [Suite]">
-  <test name="Test(failed)">
+<suite name="Failed suite [Default suite]">
+  <test name="Default test(failed)">
     <classes>
       <class name="com.gojek.sanity.LoginTest">
         <methods>
           <include name="preCondition"/>
+          <include name="paymentDetails"/>
+          <include name="bookFlight"/>
+          <include name="travellersDetail"/>
           <include name="postCondition"/>
         </methods>
       </class> <!-- com.gojek.sanity.LoginTest -->
-      <class name="com.gojek.sanity.SearchAFlight">
-        <methods>
-          <include name="searchFlight"/>
-        </methods>
-      </class> <!-- com.gojek.sanity.SearchAFlight -->
     </classes>
-  </test> <!-- Test(failed) -->
-</suite> <!-- Failed suite [Suite] -->
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->
