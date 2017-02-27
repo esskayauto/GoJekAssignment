@@ -9,6 +9,7 @@ import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.Select;
 import org.testng.annotations.Test;
 
+import com.gojek.base.BaseTest;
 import com.gojek.pom.ClearTripHomePage;
 
 public class LoginTest extends BaseTest {

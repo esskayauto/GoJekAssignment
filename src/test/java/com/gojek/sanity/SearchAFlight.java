@@ -2,6 +2,7 @@ package com.gojek.sanity;
 
 import org.testng.annotations.Test;
 
+import com.gojek.base.BaseTest;
 import com.gojek.pom.SearchFlightPage;
 
 import org.openqa.selenium.By;
